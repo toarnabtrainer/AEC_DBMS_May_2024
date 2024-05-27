@@ -5,6 +5,13 @@
 
 <hr>
 
+* **Oracle Live SQL Account Creation link:** https://livesql.oracle.com/
+* **Oracle Notes and PPTs:** https://github.com/toarnabtrainer/vodafone_oracle_batch86
+* **Korth Chapter-4 (SQL) Queries:** https://github.com/toarnabtrainer/Oracle_Notes/blob/main/Oracle-2%20Korth%20SQL%20Chapter-4.md  
+* **Oracle Join Operations:** https://github.com/toarnabtrainer/Oracle_Notes/blob/main/Join_Operations.md
+
+<hr>
+
 **For Diagram Making:**<br>
 https://app.diagrams.net/
 
