@@ -23,3 +23,10 @@ https://www.drawio.com/blog/diagrams-offline
 
 <hr>
 
+## Classwork-1
+
+![image](https://github.com/toarnabtrainer/AEC_DBMS_May_2024/assets/111301975/a555d346-47ca-4ea2-997c-62622255f6af)
+
+<hr>
+
+
