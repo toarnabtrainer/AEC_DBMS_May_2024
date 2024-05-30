@@ -9,8 +9,8 @@
 * **Oracle Notes and PPTs:** https://github.com/toarnabtrainer/vodafone_oracle_batch86
 * **Korth Chapter-4 (SQL) Queries:** https://github.com/toarnabtrainer/Oracle_Notes/blob/main/Oracle-2%20Korth%20SQL%20Chapter-4.md  
 * **Oracle Join Operations:** https://github.com/toarnabtrainer/Oracle_Notes/blob/main/Join_Operations.md
-* **Korth Chap-4 Exercise:** https://github.com/toarnabtrainer/Oracle_Notes/blob/main/Korth%20Chap-4%20Exercise.md
-
+* **Korth Chap-4 Exercise Link-1:** https://github.com/toarnabtrainer/Oracle_Notes/blob/main/Korth%20Chap-4%20Exercise.md
+* **Korth Chap-4 Exercise Link-2:** https://github.com/toarnabtrainer/MySQL_Notes/blob/main/MD-4%20Korth%20Exercise%20(Questions).md
 <hr>
 
 **For Diagram Making:**<br>
