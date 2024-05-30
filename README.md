@@ -11,6 +11,7 @@
 * **Oracle Join Operations:** https://github.com/toarnabtrainer/Oracle_Notes/blob/main/Join_Operations.md
 * **Korth Chap-4 Exercise Link-1:** https://github.com/toarnabtrainer/Oracle_Notes/blob/main/Korth%20Chap-4%20Exercise.md
 * **Korth Chap-4 Exercise Link-2:** https://github.com/toarnabtrainer/MySQL_Notes/blob/main/MD-4%20Korth%20Exercise%20(Questions).md
+* **Transforming ERD to Database:** https://github.com/toarnabtrainer/Oracle_Notes/blob/main/ERD%20to%20Database.md
 <hr>
 
 **For Diagram Making:**<br>
