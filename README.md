@@ -29,4 +29,8 @@ https://www.drawio.com/blog/diagrams-offline
 
 <hr>
 
+## Schemas for Korth Chapter - 4 (SQL)
+![image](https://github.com/toarnabtrainer/AEC_DBMS_May_2024/assets/111301975/b7b6af95-c2ff-48f1-b651-b0b677ddedca)
+
+<hr>
 
