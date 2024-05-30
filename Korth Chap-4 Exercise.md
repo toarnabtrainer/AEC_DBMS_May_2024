@@ -33,7 +33,7 @@ insert into manages values('sayan','pranab');
 insert into manages values('rajib','pranab');
 
 select * from manages;
-desc manages
+desc manages;
 
 -- pragma table_info('manages') -- in Sqlite
 --********************************************
@@ -56,7 +56,6 @@ insert into company values('aol','cal');
 insert into company values('vsnl','del');
 
 select * from company;
-
 desc company;
 </pre>
 
@@ -84,7 +83,6 @@ insert into works values('ashoke','vsnl',13000);
 insert into works values('sanjay','vsnl',30000);
 
 select * from works;
-
 desc works;
 </pre>
 
@@ -112,7 +110,6 @@ insert into employee values('sayan','gt','cal');
 insert into employee values('rajib','vip','mum');
 
 select * from employee;
-
 desc employee;
 </pre>
 
