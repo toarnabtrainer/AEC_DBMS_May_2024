@@ -36,7 +36,13 @@ from ((country cn join city ct on (cn.id = ct.country_id))
       join customer cm on (ct.id = cm.city_id))
       join call_table cl on (ct.id = cl.customer_id)
       group by country_name_eng;
-  
+
+-- Against each distinct outcome_text how many calls are registered.
+
+select outcome_text, count(*) cnt_message
+from call_table ct join call_outcome co on (ct.call_outcome_id = co.id)
+group by outcome_text;
+
 </pre>
 </b>
 
