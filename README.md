@@ -24,6 +24,23 @@ https://www.youtube.com/watch?v=Em_8IeJBmsQ&list=PLX6xdk86h_0xpW82Q0YkdN6xpHa6hv
 https://www.drawio.com/blog/diagrams-offline
 
 <hr>
+<b>
+  
+## Claswork Queries: <br>
+
+<pre>
+-- From the Call Center Database write a query to find country wise call count.
+
+select country_name_eng, count(*) cnt_call
+from ((country cn join city ct on (cn.id = ct.country_id))
+      join customer cm on (ct.id = cm.city_id))
+      join call_table cl on (ct.id = cl.customer_id)
+      group by country_name_eng;
+  
+</pre>
+</b>
+
+<hr>
 
 ## Classwork-1
 
