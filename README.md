@@ -43,6 +43,18 @@ select outcome_text, count(*) cnt_message
 from call_table ct join call_outcome co on (ct.call_outcome_id = co.id)
 group by outcome_text;
 
+-- which employee has attended maximum number of calls
+
+select * from employee
+where id in
+	(select emp.id
+	 from call_table ct join employee emp on (ct.employee_id = emp.id)
+     group by emp.id
+     having count(*) >= all 
+		(select count(*)
+		 from call_table ct join employee emp on (ct.employee_id = emp.id)
+     	 group by emp.id));
+
 </pre>
 </b>
 
