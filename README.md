@@ -101,6 +101,129 @@ where e.city = m.city
       (select * from manages);
 
 -- *********************************************************************************************************
+	
+Query-F: Find employees not working for VSNL.
+
+select employee_name
+from works
+minus
+(select employee_name
+from works
+where company_name = 'vsnl');
+
+SELECT distinct employee_name
+FROM works
+WHERE employee_name NOT IN (
+    SELECT employee_name
+    FROM works
+    WHERE company_name = 'vsnl'
+);
+
+-- *********************************************************************************************************
+
+Query-G:  Find employees earning more than every employee of Satyam.
+
+select employee_name
+from works
+where salary > all (
+    select salary
+    from works
+    where company_name = 'satyam'
+);
+
+-- *********************************************************************************************************
+
+Query-H: Find companies located in every city where VSNL is located
+
+-- division operation
+select company_name
+from company c
+where company_name <> 'vsnl'
+  and not exists (
+	(select city
+	from company
+	where company_name = 'vsnl')
+    minus
+    (select city
+    from company
+    where company.city = c.city));
+
+-- *********************************************************************************************************
+
+Query-I: Find employees earning more than their company average payroll. Payroll means total salary given by that company.
+
+select employee_name
+from works w
+where salary > (
+	select avg(salary)
+	from works
+	where company_name = w.company_name
+);
+
+-- *********************************************************************************************************
+
+Query-J: Find company with most number of employees.
+
+select company_name
+from works
+group by company_name
+having count(*) >= all (
+	select count(*)
+	from works
+	group by company_name);
+
+-- *********************************************************************************************************
+
+Query-K: Find company with the smallest payroll. Payroll means total salary given by that company.
+
+select company_name
+from works
+group by company_name
+having sum(salary) <= all (
+    select sum(salary)
+	from works
+	group by company_name);
+
+-- *********************************************************************************************************
+    
+Query-L: Find companies whose average salary is more than Satyam average salary.
+
+select company_name
+from works
+group by company_name
+having avg(salary) > (
+    select avg(salary)
+    from works
+    where company_name = 'satyam'
+);
+
+-- *********************************************************************************************************
+
+Query-M: Find the employee_name with other details having second highest salary
+    
+select *
+from employee
+where employee_name in (
+	select employee_name
+	from works where salary in (
+		select s from (
+			select rownum rn, e, s
+			from (
+				select employee_name e, salary s
+				from works
+				order by salary desc)
+    		)
+		where rn = 2));
+    
+-- *********************************************************************************************************
+
+drop table employee;
+drop table manages;
+drop table company;
+drop table works;
+
+-- *********************************************************************************************************
+
 </pre>
 
 ## Claswork Queries: <br>
