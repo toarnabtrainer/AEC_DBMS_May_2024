@@ -12,7 +12,7 @@
 * **Korth Chap-4 Exercise Link:** https://github.com/toarnabtrainer/MySQL_Notes/blob/main/MD-4%20Korth%20Exercise%20(Questions).md
 * **Transforming ERD to Database:** https://github.com/toarnabtrainer/Oracle_Notes/blob/main/ERD%20to%20Database.md
 * **Test on DBMS (1):** https://bit.ly/3yHyVM3-
-* **Test on DBMS (2):**	https://bit.ly/4bEZEaD-
+* **Test on DBMS (2):**	https://bit.ly/4bEZEaD
 
 <hr>
 
