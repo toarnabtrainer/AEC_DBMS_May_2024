@@ -27,7 +27,82 @@ https://www.drawio.com/blog/diagrams-offline
 
 <hr>
 <b>
-  
+
+## Korth Exercise 4.2 Solve:
+
+<pre>
+-- *********************************************************************************************************
+
+Query-A: Find employees who work for VSNL.
+    
+SELECT * FROM works;
+select employee_name from works where company_name='vsnl';
+
+-- *********************************************************************************************************
+
+Query-B: Find names and cities of VSNL employees.
+    
+select employee_name, city
+from employee e join works w using(employee_name)
+where company_name = 'vsnl';
+
+select employee_name, city
+from employee natural JOIN works
+where company_name = 'vsnl';
+
+select employee_name, city
+from employee inner join works using (employee_name)
+where company_name = 'vsnl';
+
+-- nested query
+select employee_name, city
+from employee
+where employee_name in
+	(select employee_name
+	 from works
+	 where company_name = 'vsnl');
+
+-- *********************************************************************************************************
+
+Query-C: Find AOL employees with salary > 20,000.
+    
+select employee_name,street,city
+from employee natural JOIN works
+where company_name = 'aol' AND salary > 20000;
+
+select employee_name, street, city
+from employee
+where employee_name IN (
+    select employee_name
+    from works
+    where company_name = 'aol' AND salary > 20000
+);
+    
+-- *********************************************************************************************************
+
+Query-D: Find employees living in same city as their companies in which they work respectively.
+
+select distinct employee_name
+from employee natural join works natural join company
+
+select distinct employee_name
+from employee e join works using(employee_name) join company c using (company_name)
+where e.city = c.city;
+    
+-- *********************************************************************************************************
+
+Query-E: Find employees living in same city and street as their respective managers.
+    
+select e.employee_name
+from employee e, employee m
+where e.city = m.city
+  and e.street = m.street
+  and (e.employee_name, m.employee_name) in
+      (select * from manages);
+
+-- *********************************************************************************************************
+</pre>
+
 ## Claswork Queries: <br>
 
 <pre>
