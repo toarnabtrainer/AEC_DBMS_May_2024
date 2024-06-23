@@ -10,6 +10,7 @@
 * **Korth Chapter-4 (SQL) Queries:** https://github.com/toarnabtrainer/Oracle_Notes/blob/main/Oracle-2%20Korth%20SQL%20Chapter-4.md  
 * **Oracle Join Operations:** https://github.com/toarnabtrainer/Oracle_Notes/blob/main/Join_Operations.md
 * **Korth Chap-4 Exercise Link:** https://github.com/toarnabtrainer/MySQL_Notes/blob/main/MD-4%20Korth%20Exercise%20(Questions).md
+* **Korth Chap-4 Exercise with Answer Link:** https://github.com/toarnabtrainer/Oracle_Notes/blob/main/Korth%20Chap-4%20Exercise%20(Answers).md
 * **Transforming ERD to Database:** https://github.com/toarnabtrainer/Oracle_Notes/blob/main/ERD%20to%20Database.md
 * **Test on DBMS (1):** https://bit.ly/3yHyVM3-
 * **Test on DBMS (2):**	https://bit.ly/4bEZEaD
